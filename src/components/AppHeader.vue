@@ -8,7 +8,7 @@
     <!-- This creates a logo from vue on the left side of the header -->
     <div class="left">
       <img class="logo" src="../assets/logo.png" />
-      <div class="link">
+      <div class="contact">
         <a>Contacts</a>
       </div>
     </div>
@@ -59,6 +59,17 @@ export default {
 .right {
   margin-left: auto;
   padding-right: 20px;
+}
+
+.contact {
+  color: darkgrey;
+  border-left: solid 1px rgb(53, 53, 53);
+  border-right: solid 1px rgb(53, 53, 53);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .link {
