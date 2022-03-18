@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     async submitData() {
-      const res = await fetch("http://localhost:5001/auth", {
+      const res = await fetch("https://contact0841.herokuapp.com/auth", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
