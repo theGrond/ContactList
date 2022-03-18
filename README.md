@@ -1,7 +1,52 @@
-# Vue 3 + Vite
+# Client
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+go to `"/Contact_List/"`
 
-## Recommended IDE Setup
+## Install dependencies (once)
+```bash
+npm install node
+```
+```bash
+npm install vue
+```
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## Start Client
+```bash
+npm run dev
+```
+
+# Server
+
+go to `"/server"`
+
+## Install dependencies (once)
+```bash
+npm install express
+```
+```bash
+npm install body-parser
+```
+```bash
+npm install mongodb
+```
+```bash
+npm install cors
+```
+```bash
+npm install jsonwebtoken
+```
+
+## Start Server
+```bash
+node server.js
+```
+
+# Database
+To initialize the database once, start the mongodb on `"localhost:27017"`
+
+go to `"/server/init"`
+
+## Init Database (once)
+```bash
+node initContactList.js
+```

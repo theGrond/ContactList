@@ -7,10 +7,7 @@
     </div>
     <div class="editContactForm" align="left">
       <form @submit.prevent="saveEntries">
-        <label>Contact ID*</label><br />
-        <p>
-          {{editContact[0].contactid}}
-        </p>
+        <label>Contact ID: {{editContact[0].contactid}}</label><br /><br />
         <label>Frist Name*</label><br />
         <input
           id="fname"
