@@ -1,23 +1,23 @@
 {
-  "name": "contactlist",
+  "name": "server",
   "version": "1.0.0",
-  "description": "go to `\"/Contact_List/\"`",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "cros": "^1.0.1",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.7",
+    "mongodb": "^4.4.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "frontend": "cd Contact_List && npm start",
-    "api": "cd server && node server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run api\" \"npm run frontend\"",
-    "heroku-postbuild": "cd Contact_List && npm install && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/theGrond/ContactList.git"
+    "start": "node server.js",
+    "heroku-postbuild": "cd frontend && ./build.sh"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/theGrond/ContactList/issues"
-  },
-  "homepage": "https://github.com/theGrond/ContactList#readme"
+  "license": "ISC"
 }
