@@ -64,7 +64,7 @@ export default {
     async deleteEntry() {
       if (confirm("Are you sure you want to delete this Contact?")) {
         const res = await fetch(
-          "http://localhost:5001/contacts/delete/" + this.Contact.contactid,
+          "https://contact0841.herokuapp.com/contacts/delete/" + this.Contact.contactid,
           {
             method: "DELETE",
             headers: {
