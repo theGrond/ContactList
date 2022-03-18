@@ -96,7 +96,7 @@ export default {
     },
     async saveEntries() {
       console.log(this.newContact);
-      const res = await fetch("http://localhost:5001/contacts/add", {
+      const res = await fetch("https://contact0841.herokuapp.com/contacts/add", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

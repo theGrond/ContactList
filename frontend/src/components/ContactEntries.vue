@@ -22,7 +22,7 @@ export default {
   name: "ContactEntries",
   // this function fetches all of the data for the contacts from the server
   async created() {
-    const res = await fetch("http://localhost:5001/contacts/getmany", {
+    const res = await fetch("https://contact0841.herokuapp.com/contacts/getmany", {
       method: "GET",
       headers: {
         "Content-type": "application/json",
