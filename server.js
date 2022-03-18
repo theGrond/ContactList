@@ -1,4 +1,5 @@
 var express = require('express')
+var history = require('connect-history-api-fallback');
 app = express()
 
 mongoose = require('mongoose')
@@ -48,6 +49,7 @@ routes(app)
 // ///
 
 if (process.env.NODE_ENV === 'production'){
+    app.use(history()); 
     app.use(express.static('frontend/dist'))
 }
 
